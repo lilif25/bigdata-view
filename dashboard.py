@@ -209,7 +209,7 @@ h1 {
 # ==================== 数据库连接 ====================
 def get_db_engine():
     # 请根据你的实际配置修改
-    return create_engine("mysql+pymysql://root:123456@localhost:3306/ecommerce_db?charset=utf8mb4")
+    return create_engine("mysql+pymysql://root:123456@192.168.43.10:3306/ecommerce_db?charset=utf8mb4")
 
 # ==================== 获取数据最大日期 ====================
 @st.cache_data(ttl=300)
